@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tellez Otimizer | Performance Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#0b0b0b;color:#fff}
+:root{--orange:#ff7900;--panel:#151515;--muted:#aaa}
+a{text-decoration:none;color:inherit}
+header{height:75px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#101010;border-bottom:1px solid #262626;position:sticky;top:0;z-index:10}
+.logo{font-size:22px;font-weight:900;color:var(--orange)}
+nav{display:flex;gap:25px;font-size:14px;color:#ccc}
+nav a:hover{color:var(--orange)}
+.hero{padding:110px 8%;background:radial-gradient(ellipse at 80% 40%,#44230d 0%,#17100a 30%,#0b0b0b 75%)}
+.tag{color:var(--orange);font-size:12px;letter-spacing:3px;font-weight:bold}
+.hero h1{font-size:clamp(38px,6vw,68px);max-width:750px;margin:22px 0;line-height:1.05}
+.hero h1 span{color:var(--orange)}
+.hero p{color:#aaa;max-width:570px;line-height:1.8}
+.button{display:inline-block;background:var(--orange);color:#111;padding:14px 23px;border-radius:5px;font-weight:bold;margin-top:25px;border:0;cursor:pointer}
+.button:hover{background:#ff9a38}
+.button.secondary{background:#242424;color:#fff;margin-left:8px}
+section{padding:75px 8%}
+.heading{margin-bottom:35px}
+.heading h2{font-size:32px}
+.heading p{color:var(--muted);margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid #292929;border-radius:9px;padding:25px;transition:.2s}
+.card:hover{border-color:var(--orange);transform:translateY(-4px)}
+.icon{font-size:30px;margin-bottom:20px}
+.category{color:var(--orange);font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.card h3{font-size:21px;margin:12px 0}
+.card p{color:#999;font-size:14px;line-height:1.7;min-height:72px}
+.price{font-size:28px;font-weight:bold;color:var(--orange);margin-top:20px}
+.price small{font-size:12px;color:#888;font-weight:normal}
+.card .button{width:100%;text-align:center;margin-top:20px}
+.about{background:#141414}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.about-box{padding:25px;background:#1c1c1c;border-left:3px solid var(--orange)}
+.about-box h3{margin-bottom:12px}
+.about-box p{color:#aaa;line-height:1.7;font-size:14px}
+.emulators{background:#101010}
+.emulator{padding:23px;text-align:center;background:#191919;border:1px solid #292929;border-radius:8px;font-weight:bold}
+.emulator span{display:block;color:var(--orange);font-size:12px;margin-top:8px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
+.step{background:#171717;padding:25px;border-radius:8px}
+.step b{font-size:28px;color:var(--orange)}
+.step p{color:#aaa;margin-top:12px;line-height:1.6}
+.social{background:#21170f;text-align:center}
+.social p{color:#bbb;margin-top:12px}
+.social-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:25px}
+.social-links a{background:#292019;padding:13px 19px;border-radius:5px;border:1px solid #54331b}
+.social-links a:hover{border-color:var(--orange)}
+footer{padding:30px 8%;background:#090909;color:#777;text-align:center;font-size:13px}
+@media(max-width:650px){header{height:auto;padding:18px 5%;gap:15px;flex-direction:column}nav{gap:13px;flex-wrap:wrap;justify-content:center;font-size:12px}.hero{padding:75px 7%}section{padding:55px 7%}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">TELLEZ OPTIMIZER</div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Otimizações</a>
+    <a href="#emuladores">Emuladores</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#redes">Redes</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="tag">PERFORMANCE • TECNOLOGIA • GAMING</div>
+  <h1>MAIS DESEMPENHO.<br><span>MENOS LIMITES.</span></h1>
+  <p>
+    Bem-vindo à Tellez Otimizer. Conheça nossos serviços de otimização,
+    configurações gamer e suporte para emuladores. Escolha seu pacote
+    e fale diretamente com nossa equipe.
+  </p>
+  <a href="#servicos" class="button">EXPLORAR SERVIÇOS</a>
+  <a href="#sobre" class="button secondary">CONHECER A LOJA</a>
+</section>
+
+<section id="servicos">
+  <div class="heading">
+    <div class="tag">NOSSA LOJA</div>
+    <h2>Serviços disponíveis</h2>
+    <p>Confira os pacotes e escolha o que combina com seu computador.</p>
+  </div>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="icon">⚙️</div>
+      <div class="category">Pacote inicial</div>
+      <h3>Otimização Básica</h3>
+      <p>Ajustes básicos do Windows, organização de inicialização e configurações de desempenho.</p>
+      <div class="price">R$ 19,90</div>
+      <a class="button" href="#" onclick="comprar('Otimização Básica - R$ 19,90');return false">COMPRAR</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">🎮</div>
+      <div class="category">Mais desempenho</div>
+      <h3>Otimização Gamer</h3>
+      <p>Configurações para jogos, ajustes gráficos e revisão de processos em segundo plano.</p>
+      <div class="price">R$ 29,90</div>
+      <a class="button" href="#" onclick="comprar('Otimização Gamer - R$ 29,90');return false">COMPRAR</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">🚀</div>
+      <div class="category">Emuladores</div>
+      <h3>Otimização de Emulador</h3>
+      <p>Configuração de emuladores Android, resolução, memória e opções de desempenho.</p>
+      <div class="price">R$ 24,90</div>
+      <a class="button" href="#" onclick="comprar('Otimização de Emulador - R$ 24,90');return false">COMPRAR</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">💻</div>
+      <div class="category">Personalizado</div>
+      <h3>Otimização Completa</h3>
+      <p>Análise do computador e ajustes personalizados de acordo com o hardware.</p>
+      <div class="price">R$ 49,90</div>
+      <a class="button" href="#" onclick="comprar('Otimização Completa - R$ 49,90');return false">COMPRAR</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">🛠️</div>
+      <div class="category">Suporte</div>
+      <h3>Configuração de Windows</h3>
+      <p>Ajuda com configurações, personalização e organização do sistema.</p>
+      <div class="price">R$ 19,90</div>
+      <a class="button" href="#" onclick="comprar('Configuração de Windows - R$ 19,90');return false">COMPRAR</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">🔥</div>
+      <div class="category">Pacote especial</div>
+      <h3>Combo Gamer</h3>
+      <p>Pacote com otimização gamer e configuração de emulador.</p>
+      <div class="price">R$ 59,90</div>
+      <a class="button" href="#" onclick="comprar('Combo Gamer - R$ 59,90');return false">COMPRAR</a>
+    </article>
+
+  </div>
+</section>
+
+<section class="emulators" id="emuladores">
+  <div class="heading">
+    <div class="tag">COMPATIBILIDADE</div>
+    <h2>Área de emuladores</h2>
+    <p>Conheça algumas das plataformas com as quais trabalhamos.</p>
+  </div>
+  <div class="grid">
+    <div class="emulator">MSI App Player<span>Configurações</span></div>
+    <div class="emulator">BlueStacks<span>Configurações</span></div>
+    <div class="emulator">LDPlayer<span>Configurações</span></div>
+    <div class="emulator">GameLoop<span>Configurações</span></div>
+    <div class="emulator">MuMu Player<span>Configurações</span></div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="heading">
+    <div class="tag">QUEM SOMOS</div>
+    <h2>Sobre a Tellez Otimizer</h2>
+    <p>Uma loja focada em tecnologia, jogos e desempenho.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-box">
+      <h3>Nosso objetivo</h3>
+      <p>Oferecer serviços de configuração e otimização para quem deseja aproveitar melhor seu computador.</p>
+    </div>
+    <div class="about-box">
+      <h3>Atendimento</h3>
+      <p>O cliente escolhe o serviço no site e conversa com nossa equipe para tirar dúvidas e combinar a contratação.</p>
+    </div>
+    <div class="about-box">
+      <h3>Transparência</h3>
+      <p>Os serviços são apresentados com seus respectivos preços e descrições antes do contato.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="heading">
+    <div class="tag">COMO FUNCIONA</div>
+    <h2>Comprar é simples</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><b>01</b><p>Escolha seu serviço na loja.</p></div>
+    <div class="step"><b>02</b><p>Clique em comprar para abrir nosso Discord.</p></div>
+    <div class="step"><b>03</b><p>Converse com a equipe e confirme os detalhes.</p></div>
+    <div class="step"><b>04</b><p>Combine o pagamento e o atendimento.</p></div>
+  </div>
+</section>
+
+<section class="social" id="redes">
+  <div class="tag">ACOMPANHE A LOJA</div>
+  <h2>Encontre a Tellez Otimizer</h2>
+  <p>Acompanhe nossas novidades e entre em contato.</p>
+  <div class="social-links">
+    <a id="discord" href="#">Discord</a>
+    <a id="instagram" href="#">Instagram</a>
+    <a id="tiktok" href="#">TikTok</a>
+    <a id="whatsapp" href="#">WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  TELLEZ OPTIMIZER © 2026 — Todos os direitos reservados.
+  <br><br>
+  Os resultados de desempenho variam conforme o computador e seus componentes.
+</footer>
+
+<script>
+// ====================================
+// CONFIGURE SUAS REDES SOCIAIS AQUI
+// ====================================
+
+const DISCORD = "https://discord.gg/";
+const INSTAGRAM = "https://instagram.com/COLOQUE_SEU_USUARIO";
+const TIKTOK = "https://tiktok.com/@COLOQUE_SEU_USUARIO";
+const WHATSAPP = "https://wa.me/5571981265142";
+
+// ====================================
+// SISTEMA DE LINKS
+// ====================================
+
+document.getElementById("discord").href = DISCORD;
+document.getElementById("instagram").href = INSTAGRAM;
+document.getElementById("tiktok").href = TIKTOK;
+document.getElementById("whatsapp").href = WHATSAPP;
+
+document.querySelectorAll(".social-links a").forEach(link => {
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+});
+
+// ====================================
+// SISTEMA DE COMPRAS
+// ====================================
+
+function comprar(produto) {
+  if (!DISCORD.startsWith("https://discord.gg/") &&
+      !DISCORD.startsWith("https://discord.com/invite/")) {
+    alert("O Discord da loja ainda precisa ser configurado.");
+    return;
+  }
+
+  const mensagem = encodeURIComponent(
+    "Olá! Vim pelo site da Tellez Otimizer e quero comprar: " + produto
+  );
+
+  window.open(DISCORD, "_blank", "noopener");
+}
+</script>
+
+</body>
+</html>
